@@ -10,6 +10,8 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
+      - run: gh issue create --title "Workflow issue" --body "Thank you for creating this issue!"
+
   second-job:
     runs-on: ubuntu-latest
     steps:
