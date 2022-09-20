@@ -11,6 +11,8 @@ jobs:
         run: echo Hello, world!
 
       - run: gh issue create --title "Workflow issue" --body "Thank you for creating this issue!"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   second-job:
     runs-on: ubuntu-latest
